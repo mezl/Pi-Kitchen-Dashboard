@@ -4,7 +4,7 @@ This project turns your monitor and Raspberry Pi into a simple, skinnable time a
 The project is forked from Pi-Kitchen-Dashboard (https://github.com/userexec/Pi-Kitchen-Dashboard.git`.)
 
 
-![alt text](doc/PiClockTFT.jpg "Pi Kitchen Dashboard")
+![alt text](doc/PiClockTFT.jpg "Pi Mini LCD Dashboard")
 
 * * *
 
@@ -68,7 +68,7 @@ This project is not distributed with its dependencies; however, [Bower](http://b
     
 
 3. `sudo npm install -g bower` - Install Bower
-4. `cd ~/Pi-Kitchen-Dashboard` - cd into the directory of the cloned project
+4. `cd ~/Pi-Mini-Dashboard` - cd into the directory of the cloned project
 5. `bower install` - Install the project's dependencies
 
 ### <a name="settingYourLocation"></a>Setting your location
@@ -136,7 +136,7 @@ Midori is used for its compatibility with multiple RPi generations and reasonabl
 	```
 	[Desktop Entry]
 	Type=Application
-	Exec=midori -e Fullscreen -a file:///home/pi/Pi-Kitchen-Dashboard/index.html
+	Exec=midori -e Fullscreen -a file:///home/pi/Pi-Mini-Dashboard/index.html
 	```
 
 Your Pi should now atomatically start kiosk mode and show the dashboard full screen once your desktop loads.
@@ -147,7 +147,7 @@ If your time or date are incorrect, use `sudo raspi-config` to set your locale a
 
 If you don't want your display to run 24/7, you can use cron jobs to fire a pair of included bash scripts: screenOff.sh and screenOn.sh. Please ensure you've completed the [Disallowing screen sleep](#disallowingScreenSleep) step above in order to keep the display always on during the times it's scheduled to be on.
 
-1. `cd` into your Pi-Kitchen-Dashboard directory and set both scripts to executable
+1. `cd` into your Pi-Mini-Dashboard directory and set both scripts to executable
 	
 	```bash
 	chmod +x screenOff.sh
@@ -157,13 +157,13 @@ If you don't want your display to run 24/7, you can use cron jobs to fire a pair
 2. Run `crontab -e` and add cronjobs to the end using the provided scripts. If you're not comfortable writing cronjobs manually, you can use a <a href="http://cron.nmonitoring.com/cron-generator.html">crontab generator</a>. The following lines, for example, shut off the display at 11:00PM each night and turn it back on at 6:00AM. Be sure to edit the file paths if necessary.
 	
 	```
-	0 23 * * * /home/pi/Pi-Kitchen-Dashboard/screenOff.sh
-	0 6 * * * /home/pi/Pi-Kitchen-Dashboard/screenOn.sh
+	0 23 * * * /home/pi/Pi-Mini-Dashboard/screenOff.sh
+	0 6 * * * /home/pi/Pi-Mini-Dashboard/screenOn.sh
 	```
 
 ## <a name="changingTheSkin"></a>Changing the skin
 
-Skins are kept, conveniently, in the skins folder. To switch skins, edit `Pi-Kitchen-Dashboard/index.html` and insert the folder name of the skin you wish to use where the comments direct.
+Skins are kept, conveniently, in the skins folder. To switch skins, edit `Pi-Mini-Dashboard/index.html` and insert the folder name of the skin you wish to use where the comments direct.
 
 ## <a name="creatingSkins"></a>Creating skins
 
