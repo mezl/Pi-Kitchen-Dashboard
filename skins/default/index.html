@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="viewport" content="width=320px, initial-scale=0.1"/>
 		<meta name="application-name" content="Pi Kitchen Dashboard"/>
 
 		<title>Pi Kitchen Dashboard Default</title>
@@ -73,7 +73,6 @@
 		<div id="wrapper">
 			<!-- REQUIRED Powered by Yahoo! Attribution -->
 			<!-- -->	<a id="attribution" href="https://www.yahoo.com/?ilc=401" target="_blank">
-			<!-- -->		<img src="https://poweredby.yahoo.com/white.png" width="134" height="29"/>
 			<!-- -->		<!--<img src="https://poweredby.yahoo.com/purple.png" width="134" height="29"/>-->
 			<!-- -->	</a>
 			<!-- REQUIRED Powered by Yahoo! Attribution -->
@@ -91,14 +90,19 @@
 								</div>
 							</a>
 						</td>
-						<td colspan="3">
+						<td id="currentlyTime" colspan="3">
 							<!-- Current date and time information -->
-							<div id="time"></div>
-							<div id="date"></div>
+			<div id="time"> 
+			<span id="hours"></span> 
+			<span class="separator">:</span> 
+			<span id="minutes"></span> 
+			</div>
+			<div id="date"></div>
 						</td>
 					</tr>
 					<tr>
 						<!-- Upcoming forecasts -->
+<!--
 						<td class="forecast" id="forecast1">
 							<a class="yahooLink" href="#" target="_blank">
 								<div class="day"></div>
@@ -144,6 +148,7 @@
 								<div class="lowTemp">Low: <span class="low"></span></div>
 							</a>
 						</td>
+-->
 					</tr>
 				</tbody>
 			</table>

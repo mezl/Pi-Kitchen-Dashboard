@@ -9,14 +9,16 @@
 
 	// Your Yahoo WOEID code
 	// Find your WOEID code at http://zourbuth.com/tools/woeid/
-	var woeid = 23416998;
+	//var woeid = 23416998;
+	var woeid = 2306185;//hsinchu
 	
 	// Your temperature unit measurement
 	// This bit is simple, 'c' for Celcius, and 'f' for Fahrenheit
 	var unit = 'c';
 	
 	// Format for date and time
-	var formatTime = 'h:mm:ss a'
+	var formatTimeHH = 'hh'
+	var formatTimeMM = 'mm'
 	var formatDate = 'dddd, MMMM Do'
 
 	// Yahoo! query interval (milliseconds)
@@ -181,8 +183,9 @@
 		}, waitBetweenWeatherQueriesMS);
 
 		// Set the current time and date on the clock
-		if ($('#time').length) {
-			$('#time').html(moment().format(formatTime));
+		if ($('#hours').length) {
+			$('#hours').html(moment().format(formatTimeHH));
+			$('#minutes').html(moment().format(formatTimeMM));
 		}
 		if ($('#date').length) {
 			$('#date').html(moment().format(formatDate));
@@ -190,8 +193,9 @@
 
 		// Refresh the time and date every second
 		setInterval(function(){
-			if ($('#time').length) {
-				$('#time').html(moment().format(formatTime));
+			if ($('#hours').length) {
+				$('#hours').html(moment().format(formatTimeHH));
+				$('#minutes').html(moment().format(formatTimeMM));
 			}
 			if ($('#date').length) {
 				$('#date').html(moment().format(formatDate));
