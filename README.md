@@ -3,7 +3,7 @@
 
 This project turns your monitor and Raspberry Pi into a simple, skinnable time and weather dashboard for your kitchen. Want it in your living room? **Too bad.**
 
-![alt text](https://lh5.googleusercontent.com/OvyLwyLtXF69AJ-8U68OPnLXhZNwOPG7JYv5i-fa_44=w1167-h875-no "Pi Kitchen Dashboard")
+![alt text](doc/PiClockTFT.jpg "Pi Kitchen Dashboard")
 
 * * *
 
