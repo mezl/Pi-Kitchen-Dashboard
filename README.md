@@ -1,7 +1,8 @@
-# Pi Kitchen Dashboard
-##### Because thrift store monitors still need things to do.
+# Pi Mini LCD Dashboard
 
-This project turns your monitor and Raspberry Pi into a simple, skinnable time and weather dashboard for your kitchen. Want it in your living room? **Too bad.**
+This project turns your monitor and Raspberry Pi into a simple, skinnable time and weather dashboard using 3.2" PiTFT LCD
+The project is forked from Pi-Kitchen-Dashboard (https://github.com/userexec/Pi-Kitchen-Dashboard.git`.)
+
 
 ![alt text](doc/PiClockTFT.jpg "Pi Kitchen Dashboard")
 
@@ -35,7 +36,7 @@ This project turns your monitor and Raspberry Pi into a simple, skinnable time a
 
 ### <a name="cloning"></a>Cloning
 
-Clone this repository with `git clone https://github.com/userexec/Pi-Kitchen-Dashboard.git`.
+Clone this repository with `git clone https://github.com/mezl/Pi-Mini-Dashboard.git`.
 
 If your Pi does not currently have git, you will need to install it first with `sudo apt-get install git`.
 
@@ -112,7 +113,7 @@ Unclutter causes the mouse cursor to disappear when the mouse isn't being moved.
 
 `sudo apt-get install unclutter`
 
-#### <a name="installingMidori"></a>Installing Midori
+#### <a name="installingMidori"></a>Installing Midori or Chrome
 
 Midori is used for its compatibility with multiple RPi generations and reasonably solid rendering. Other browsers may be used if preferred using much the same strategy.
 
