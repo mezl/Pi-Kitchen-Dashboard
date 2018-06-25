@@ -20,7 +20,7 @@ text-decoration: inherit;
 #wrapper {
 position: fixed;
 width: 80%;
-height: 30%;
+height: 40%;
 }
 #attribution {
 position: absolute;
@@ -32,7 +32,7 @@ right: 0px;
 width: 100%;
 height: 60%;
 text-align: center;
-background: black;
+background: black;/*whole background*/
 }
 
 .forecast {
@@ -61,7 +61,8 @@ font-size: 7vmin;
  line-height: 42vmin !important;
 }
 #currently {
- height: 80vh;
+ height: 50vh;
+ /*background: darkgray;*/
 }
 #currentlyTime {
  font-size: 18px;
@@ -116,10 +117,16 @@ font-size: 10.5vmin;
  /*margin:0px;
  padding:0px;*/
  /*background:green;*/
- animation: blinker 2s linear infinite;
+ animation: blinker 4s linear infinite;
 }
 @keyframes blinker{
-50% {opacity: 0;}
+0% {color:yellow;opacity: 100}
+17% {opacity: 0;}
+34%{color:red;opacity:100}
+51% {opacity: 0;}
+68% {color:blue;opacity: 100}
+85% {opacity: 0;}
+100% {color:yellow;opacity: 100;}
 }
 #time {
 font-size: 55vmin;
@@ -127,6 +134,7 @@ margin:0px;
 padding:0px;
 word-spacing: -30px;
 letter-spacing: -2px;
+white-space: nowrap;
 }
 #hours{
 /*background:red;*/
@@ -142,6 +150,6 @@ color: #CCCCCC;
 display: inline-block;
 height: 100%;
 width: 100%;
-background: rgba(255,255,255,0.2);
+background: rgba(255,0,0,0.2);
 padding-top: 4vh;
 }

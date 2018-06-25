@@ -30,20 +30,20 @@
 			with that ID.
 
 				#currently
-					.icon 	- 	Current condition icon (customize icons in your skin's js)
-					.desc 	- 	Plain text condition
-					.temp 	- 	Current temperature
+					.icon	-	Current condition icon (customize icons in your skin's js)
+					.desc	-	Plain text condition
+					.temp	-	Current temperature
 
 				#forecast1 ... #forecast5
-					.day 	- 	Plain text day of the week
-					.icon 	- 	Forecast condition icon
-					.desc 	- 	Plain text forecast condition
-					.high 	- 	Forecasted high temperature
-					.low 	- 	Forecasted low temperature
+					.day	-	Plain text day of the week
+					.icon	-	Forecast condition icon
+					.desc	-	Plain text forecast condition
+					.high	-	Forecasted high temperature
+					.low	-	Forecasted low temperature
 
-				#time		- 	Time value provided by moment.js
+				#time		-	Time value provided by moment.js
 
-				#date 		- 	Date value provided by moment.js
+				#date		-	Date value provided by moment.js
 
 				a.yahooLink	-	Required for Yahoo! Weather API usage. Any
 								weather data must link to its source on Yahoo.
@@ -79,14 +79,14 @@
 
 			<table id="display">
 				<tbody>
-					<tr>
+					<tr id="firstRow">
 						<td id="currently" colspan="2">
 							<!-- Current weather information -->
 							<a class="yahooLink" href="#" target="_blank">
 								<div id="currentlyWrapper">
 									<div class="icon"></div>
 									<div class="desc"></div>
-									<div class="currentTemp">Temperature:<br /><span class="temp"></span></div>
+									<div class="currentTemp"><span class="temp"></span></div>
 								</div>
 							</a>
 						</td>
